@@ -1,4 +1,4 @@
-package alexander.voronov.testvideoapp.ui
+package alexander.voronov.testvideoapp.ui.video
 
 import alexander.voronov.testvideoapp.databinding.FragmentVideoBinding
 import android.net.Uri

@@ -18,7 +18,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline_middle"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ui.MainActivity"
+        tools:context=".ui.preview.MainActivity"
         tools:layout="@layout/fragment_video" />
 
     <androidx.fragment.app.FragmentContainerView
@@ -27,7 +27,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline_middle"
-        tools:context=".ui.MainActivity"
+        tools:context=".ui.preview.MainActivity"
         tools:layout="@layout/fragment_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,13 @@
 package alexander.voronov.testvideoapp.api
 
-import alexander.voronov.testvideoapp.domain.VideoRepository
+import alexander.voronov.testvideoapp.domain.PosterRepository
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class VideoRepositoryImpl : VideoRepository {
+class PosterRepositoryImpl : PosterRepository {
 
     private val api: VideoApi by lazy {
         Retrofit.Builder()
@@ -24,7 +24,7 @@ class VideoRepositoryImpl : VideoRepository {
             .create(VideoApi::class.java)
     }
 
-    override suspend fun posterFromUrl(): DataFromUrlResponseItem {
-        TODO("Not yet implemented")
-    }
+    override suspend fun posterFromUrl(): DataFromUrlResponseItem = api.posterFromUrl()
+    //override suspend fun videoOnClick()  = api.videoFromUrl(file_url)
+
 }

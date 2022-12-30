@@ -1,4 +1,4 @@
-package alexander.voronov.testvideoapp.ui
+package alexander.voronov.testvideoapp.ui.preview
 
 import alexander.voronov.testvideoapp.R
 import androidx.appcompat.app.AppCompatActivity
